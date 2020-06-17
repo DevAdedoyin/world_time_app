@@ -6,8 +6,17 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("initState is Called First");
+  }
+
   @override
   Widget build(BuildContext context) {
+    print("Build is called next");
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red,
